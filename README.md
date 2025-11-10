@@ -33,7 +33,67 @@ Linguagem: C++
 ---
 
 ## Estrutura do repositório
-- `/codigo` — código-fonte (explicar arquivos principais)
+- `/codigo` — /*
+  Projeto Velário de Candeias
+  Monitor de Temperatura
+  Feito por: Adalberto Santana
+*/
+
+void setup() {
+  // Define os pinos dos LEDs e do alarme como SAÍDA
+  pinMode(2, OUTPUT); // LED Verde
+  pinMode(3, OUTPUT); // LED Amarelo
+  pinMode(4, OUTPUT); // LED Vermelho
+  pinMode(5, OUTPUT); // Buzzer (Alarme)
+
+  // Define o pino do sensor como ENTRADA
+  pinMode(A0, INPUT);
+  
+  // Inicia o monitor serial (para ver a temp no PC)
+  Serial.begin(9600);
+}
+
+void loop() {
+  // 1. LER O SENSOR
+  int leituraDoSensor = analogRead(A0);
+
+  // 2. CONVERTER A LEITURA PARA GRAUS CELSIUS
+  // Primeiro, converte a leitura (0-1023) para voltagem (0-5V)
+  float voltagem = leituraDoSensor * (5.0 / 1023.0);
+  // Agora, converte a voltagem para temperatura
+  float temperatura = (voltagem - 0.5) * 100;
+
+  // 3. MOSTRAR O VALOR NO MONITOR
+  Serial.print("Temperatura atual: ");
+  Serial.print(temperatura);
+  Serial.println(" C");
+
+  // 4. LÓGICA DE DECISÃO (IF / ELSE)
+  
+  if (temperatura < 40) {
+    // TUDO NORMAL (abaixo de 40 graus)
+    digitalWrite(2, HIGH); // Liga o verde
+    digitalWrite(3, LOW);  // Desliga o amarelo
+    digitalWrite(4, LOW);  // Desliga o vermelho
+    noTone(5);             // Desliga o alarme
+
+  } else if (temperatura < 60) {
+    // ATENÇÃO (entre 40 e 60 graus)
+    digitalWrite(2, LOW);
+    digitalWrite(3, HIGH); // Liga o amarelo
+    digitalWrite(4, LOW);
+    noTone(5);
+
+  } else {
+    // PERIGO! (acima de 60 graus)
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH); // Liga o vermelho
+    tone(5, 1000);         // Toca o alarme
+  }
+  // Espera 1 segundo antes de medir de novo
+  delay(1000);
+}
 - `/docs` — documentação e imagens
 - `/figma` — link externo para a interface (não é pasta; ver seção Figma)
 
