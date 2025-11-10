@@ -123,7 +123,7 @@ Criei uma interface mobile para controle do sistema. Acesse a visualização pú
 
 ## Screenshots
 (Incluir imagens do circuito, do código rodando e telas do Figma)
-- `docs/screenshot-circuito.png`<img width="1904" height="814" alt="image" src="https://github.com/user-attachments/assets/e7d7323e-dba2-4c5a-8549-fa5d6656ff1d" />
+<img width="1904" height="814" alt="image" src="https://github.com/user-attachments/assets/e7d7323e-dba2-4c5a-8549-fa5d6656ff1d" />
 
 - `docs/screenshot-figma-1.png`
 
