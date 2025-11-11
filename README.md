@@ -94,7 +94,8 @@ void loop() {
   // Espera 1 segundo antes de medir de novo
   delay(1000);
 }
-- `/docs` — documentação e imagens
+- `/docs` — <img width="662" height="610" alt="image" src="https://github.com/user-attachments/assets/65d14766-50a9-43f4-bffd-43578815a71b" />
+
 - `/figma` — https://www.figma.com/design/oArSTwikzTKxZZDqsHb0Ay/TempGuard?node-id=0-1&t=RB5rl17NIjoG9QiY-1
 
 ---
