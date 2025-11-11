@@ -1,4 +1,4 @@
-# Projeto Alerta — Etony Guedes e Geovanna Almeida
+# TempGuard — Etony Guedes e Geovanna Almeida
 
 ## Sumário
 - Descrição
@@ -14,7 +14,7 @@
 ---
 
 ## Descrição
-O Projeto é um sistema de alerta de segurança desenvolvido para o velário do Santuário de Nossa Senhora das Candeias.
+O Projeto tempguard é um sistema de alerta de segurança desenvolvido para o velário do Santuário de Nossa Senhora das Candeias.
 Seu objetivo é monitorar a temperatura ambiente e acionar alertas visuais e sonoros quando o calor ultrapassar limites seguros, prevenindo riscos de superaquecimento e incêndio.
 O sistema simula o funcionamento real utilizando o Tinkercad e a plataforma Arduino Uno.
 ---
@@ -95,7 +95,7 @@ void loop() {
   delay(1000);
 }
 - `/docs` — documentação e imagens
-- `/figma` — link externo para a interface (não é pasta; ver seção Figma)
+- `/figma` — https://www.figma.com/design/oArSTwikzTKxZZDqsHb0Ay/TempGuard?node-id=0-1&t=RB5rl17NIjoG9QiY-1
 
 ---
 
@@ -116,8 +116,7 @@ Você pode alterar a temperatura simulando a variação do sensor TMP36 para ver
 
 ## Interface mobile (Figma)
 Criei uma interface mobile para controle do sistema. Acesse a visualização pública aqui:  
-**Link Figma:** COLE_AQUI_O_LINK_DE_COMPARTILHAMENTO_DO_FIGMA  
-> Observação: certifique-se de que o link de compartilhamento está em modo de visualização pública (ou 'anyone with the link').
+**Link Figma:** https://www.figma.com/design/oArSTwikzTKxZZDqsHb0Ay/TempGuard?node-id=0-1&t=RB5rl17NIjoG9QiY-1
 
 ---
 
@@ -125,7 +124,8 @@ Criei uma interface mobile para controle do sistema. Acesse a visualização pú
 (Incluir imagens do circuito, do código rodando e telas do Figma)
 <img width="1904" height="814" alt="image" src="https://github.com/user-attachments/assets/e7d7323e-dba2-4c5a-8549-fa5d6656ff1d" />
 
-- `docs/screenshot-figma-1.png`
+<img width="1395" height="826" alt="image" src="https://github.com/user-attachments/assets/c508169c-12ef-4b6c-9946-68e40c9491eb" />
+
 
 ---
 
