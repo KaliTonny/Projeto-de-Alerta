@@ -20,13 +20,13 @@ O sistema simula o funcionamento real utilizando o Tinkercad e a plataforma Ardu
 ---
 
 ## Requisitos
-1 Arduino Uno R3
-1 Sensor de Temperatura (TMP36)
-1 LED Verde
-1 LED Amarelo
-1 LED Vermelho
-4 Resistores de 220 Ω
-1 Piezo
+1 Arduino Uno R3 |
+1 Sensor de Temperatura (TMP36) |
+1 LED Verde |
+1 LED Amarelo |
+1 LED Vermelho |
+4 Resistores de 220 Ω |
+1 Piezo |
 - Versão do ambiente (se aplicável)
 Plataforma: Tinkercad
 Linguagem: C++ 
